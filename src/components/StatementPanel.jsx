@@ -1,12 +1,23 @@
+import { linearSearch } from "../constants/info";
 const StatementPanel = () => {
   return (
-    <div className="border px-6 py-6 relative bg-gray-500 h-[70vh] w-96 rounded-sm ">
-      <h1 className="text-lg font-bold">Linear Search</h1>
-      <p>
-        Searches for a target value by going through each element one by one
-        from left to right until it finds the target or reaches the end of the
-        array.
-      </p>
+    <div className="blur-[0.6px] disabled:relative border border-[#3c3c3c] bg-[#282828] h-[70vh] px-4 rounded-sm disabled:-left-10 -z-5 ">
+      <div className="h-full px-4 overflow-hidden hidden">
+        <h1 className="text-lg font-bold">{linearSearch.meta.topic}</h1>
+        <div>
+          <p>{linearSearch.introduction.summary}</p>
+          <p>{linearSearch.introduction.analogy}</p>
+          <p>{linearSearch.introduction.realWorldUse}</p>
+        </div>
+        <div className="my-3">
+          <h2 className="text-xl font-bold">How It Works</h2>
+          <ul>
+            {linearSearch.howItWorks.steps.map((step, i) => (
+              <li id={i}>{i+1}: {step}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

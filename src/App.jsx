@@ -15,10 +15,7 @@ function App() {
           <SideMenu />
         </div>
 
-        <div className="w-full my-12">
-          <div>
-            <Breadcrumb />
-          </div>
+        <div className="w-full text-white">
           <div>
             <MainScreen />
           </div>
