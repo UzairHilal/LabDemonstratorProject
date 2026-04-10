@@ -11,12 +11,12 @@ function App() {
       </div>
 
       <div className="flex">
-        <div className="flex">
+        <div className="flex my-1 border-2 border-[#262626] rounded-tl-md">
           <SideMenu />
         </div>
 
-        <div className="w-full text-white">
-          <div>
+        <div className="w-full text-white bg-[#171717] ml-1 my-1 border-2 border-[#262626] rounded-tr-md overflow-hidden">
+          <div >
             <MainScreen />
           </div>
           <div className="flex justify-center items-center">

@@ -1,8 +1,8 @@
 import { linearSearch } from "../constants/info";
 const StatementPanel = () => {
   return (
-    <div className="blur-[0.6px] disabled:relative border border-[#3c3c3c] bg-[#282828] h-[70vh] px-4 rounded-sm disabled:-left-10 -z-5 ">
-      <div className="h-full px-4 overflow-hidden hidden">
+    <div className="blur-[0px] disabled:relative border border-[#262626] bg-[#171717] h-[80vh] px-4 rounded-sm disabled:-left-10">
+      <div className="h-full px-4 overflow-hidden">
         <h1 className="text-lg font-bold">{linearSearch.meta.topic}</h1>
         <div>
           <p>{linearSearch.introduction.summary}</p>

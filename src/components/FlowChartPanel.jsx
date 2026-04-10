@@ -1,6 +1,6 @@
 const FlowChartPanel = () => {
   return (
-    <div className="blur-[0.6px] disabled:relative border border-[#3c3c3c] bg-[#282828] h-[70vh] px-4 rounded-sm disabled:-left-10 -z-5 ">
+    <div className="blur-[0px] disabled:relative border border-[#262626] bg-[#171717] h-[80vh] px-4 rounded-sm disabled:-left-10 ">
       <div className="disabled:hidden">
 
       </div>

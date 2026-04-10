@@ -6,17 +6,16 @@ import StatementPanel from "./StatementPanel";
 
 export const MainScreen = () => {
   return (
-    <main className="px-6 my-8 lg:mx-40 flex flex-col justify-center items-center">
-      <div className="my-6">
+    <main className="px-6 my-6 lg:mx-40 flex flex-col justify-center items-center">
+      <div className="my-3">
         <Breadcrumb />
       </div>
-      <div className="">
-        <div className="flex gap-1 ">
-          <StatementPanel />
-          <FlowChartPanel />
-          <DemoVizPanel />
-          <CodeEditorPanel />
-        </div>
+
+      <div className="flex gap-1">
+        {/* <StatementPanel /> */}
+        <FlowChartPanel />
+        <DemoVizPanel />
+        <CodeEditorPanel />
       </div>
     </main>
   );
